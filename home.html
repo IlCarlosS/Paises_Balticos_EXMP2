@@ -1,0 +1,199 @@
+<!--Realizado por: Carlos Manuel Solis Hernandez
+    Fecha: 21 de octubre del 2023 al 
+    Titulo: Paises Balticos -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países Balticos- Pagina Principal</title>
+    <link rel="stylesheet" href="/proyecto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Fuente google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+
+
+<body style="background-color: blanchedalmond;">
+
+    <!-- Modal (solo ocurre en pagina princiapal) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Países Bálticos: El País de los Cantantes</h2>
+            <img src="https://spanish.xinhuanet.com/photo/2018-07/03/137295708_15305120371501n.jpg" alt="" class="img" >
+            <p>Los países bálticos son conocidos como el "País de los Cantantes". Esto se debe a su tradición de coros y festivales de canto, que han sido una parte fundamental de la identidad cultural de la región. Uno de los eventos más destacados es el Festival de la Canción y de la Danza de Letonia, que ha sido celebrado desde 1873 y es uno de los festivales de música coral más grandes del mundo.</p>
+        </div>
+    </div>
+    <script src="/proyecto.js"></script> <!-- LLamada a Js -->
+
+
+    <!-- Inicio Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img src="/MULTIMEDIA/200px-Paisesbalticos.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">  <!-- Logo navbar -->
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"> 
+            <span class="navbar-toggler-icon"></span>
+          </button>-->
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="/home.html">Pagina Principal</a>
+                  </li>
+              <li class="nav-item">
+                <a style="color: white;" class="nav-link" href="/estonia.html">Estonia</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: white;" class="nav-link" href="/letonia.html">Letonia</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: white;" class="nav-link" href="/lituania.html">Lituania</a>
+              </li>
+              <li class="nav-item">
+                <a style="color: white;" class="nav-link" href="/lituania.html">Historia y Datos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+      <!-- Fin Navbar -->
+
+      <!-- Inicio Carusel -->
+    <div class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center ">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://a.cdn-hotels.com/gdcs/production7/d423/80d1606a-b79c-4dc4-a227-08881bdfb96d.jpg" class="custom-carousel-image" alt="...">
+                    <div class="overlay">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h1>Estonia</h1>
+                        <h3><i>Eesti Vabariik</i></h3><h3>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.hola.com/imagenes/viajes/20200622170654/imprescindibles-en-la-ciudad-de-riga-capital-de-letonia-lo-que-no-te-puedes-perder/0-838-886/riga-imprescindibles-letonia-t.jpg" class="custom-carousel-image" alt="...">
+                    <div class="overlay">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h1>Letonia</h1>
+                        <h3><i>Latvijas Republika</i></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://www.turismolituania.es/wp-content/uploads/2018/06/lituania_castillo_trakai.jpg" class="custom-carousel-image" alt="...">
+                    <div class="overlay">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Lituania</h1>
+                                <h3><i>Lietuvos Respublika</i></h3>
+                            </div>
+                        </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div> 
+    </div> 
+    </div>
+    <!-- Fin Carusel -->
+
+    <!-- Referencias para funcionamiento del Carusel (creo) no eliminar  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <br>
+    <br>
+    <!-- Que son los estados balticos -->
+        <div class="section-con-fondo">  
+            <div class="titulo">
+                <H1>¿Que son los países Balticos?</H1>
+            </div><br><br>
+            <div class="container text-justify d-flex justify-content-center align-items-center" >
+                <p>
+                    La expresión "países bálticos" o "repúblicas bálticas" se utiliza para referirse a tres naciones ubicadas en la costa
+                    del Mar Báltico: Estonia, Letonia y Lituania, las cuales en el pasado formaron parte de la Unión Soviética. 
+                    Sin embargo, desde una perspectiva cultural, étnica y lingüística, solo Letonia y Lituania son consideradas
+                    naciones "bálticas", ya que los estonios tienen una mayor afinidad con el pueblo finés y hablan el idioma estonio, 
+                    que es cercano al finés. Por otro lado, Letonia y Lituania utilizan lenguas bálticas, específicamente el letón y el lituano.
+                    <br><br>
+                    Es importante destacar que aunque en la actualidad estos países son repúblicas independientes, la expresión "Repúblicas bálticas" 
+                    hace referencia a los mismos territorios durante el período en el que estuvieron bajo el dominio de la Unión Soviética, 
+                    es decir, la RSS de Estonia, la RSS de Letonia y la RSS de Lituania.
+                </p>    
+            </div>
+            <div class="container text-center d-flex justify-content-center align-items-center" > 
+                <img src="https://elgiroscopo.es/wp-content/uploads/2018/01/mapa_paises_balticos.png" 
+                width="500px" height="500px" alt="Paises balticos" class="imagen-con-marco">
+            </div>
+        </div>
+
+        <!-- Seccion Naturaleza -->
+        <br><br>
+        <div class="titulo">
+            <H1>Naturaleza</H1>
+        </div> <br> <br>
+        <div class="container text-justify d-flex justify-content-center align-items-center" >
+            <p>
+                Estonia, Letonia y Lituania, cuentan con una biodiversidad variada y única en su región, aunque 
+                su tamaño geográfico relativamente pequeño cuenta con una amplia biodiversidad y areas naturales.
+                <br><br>
+                Los países bálticos albergan extensos bosques que son el hogar de diversas especies de árboles, plantas y animales.
+                Los bosques bálticos son conocidos por sus coníferas, como el pino y el abeto, así como árboles caducifolios, 
+                como el roble y el abedul. <br><br>
+                Ademas, cuentan con las costas del Mar Báltico en estos países es un hábitat importante para aves marinas, así como para especies 
+                de peces y vida marina. <br><br>
+                Los países bálticos albergan una variedad de vida silvestre, incluyendo especies como el alce, el lince, el zorro, el jabalí y el
+                ciervo. Además, la región es un lugar de paso importante para las aves migratorias.
+            </p>
+            <div class="container text-center d-flex justify-content-center align-items-center" > 
+                <img src="https://viamex.es/wp-content/uploads/2019/03/BALTICOS-PORTADA.jpg" 
+                width="700px" height="500px" alt="Bosques Balticos" class="imagen-con-marco2">
+            </div>
+        </div>
+
+        <br><br>
+        <footer>
+            <div class="footer-content">
+                <div class="contact">
+                    <h3>Contacto</h3>
+                    <p>Email: al293462@edu.uaa.mx</p>
+                </div>
+                <div class="links">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="/home.html">Pagina de Inicio</a></li>
+                        <li><a href="/datos.html#inicio_sesion">Iniciar Sesion</a></li>
+                        <!-- <li><a href="/contacto">Contacto</a></li> -->
+                    </ul>
+                </div>
+                <div class="author-info">
+                    <h3>Información del Autor</h3>
+                    <p>Carlos Manuel Solis Hernandez</p>
+                    <p>Estudiante de la Universidad Autonoma de Aguacalientes (UAA).</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <a>&copy; 2023 Paises Balticos. Licencia Creative Commons.</a>
+            </div>
+        </footer>
+</body>
+</html>
