@@ -11,30 +11,33 @@ document.getElementById('closeModal').addEventListener('click', function() {
 // Llama a la función para abrir el modal cuando se carga la página
 window.onload = openModal;
 
-//Validacion de Forumulario
-function validarFormulario(){
+//Validacion de Formulario
+function validarFormulario() {
     var login = document.forms["loginForm"]["login"].value;
     var password = document.forms["loginForm"]["password"].value;
-
-    if (login==""){
-        alert("el campo de login no puede estar vacio ");
-        return false;
+  
+    if (login === "") {
+      alert("El campo de login no puede estar vacío");
+      return false;
     }
-
-    if(!/^[a-zA-Z]+$/.test(login)){
-        alert("el login debe contener solo letras");
-        return false;
+  
+    if (!/^[a-zA-Z]+$/.test(login)) {
+      alert("El login debe contener solo letras");
+      return false;
     }
-
-    if(password == ""){
-        alert("el campo password no puede estar vacio");
-        return false;
+  
+    if (password === "") {
+      alert("El campo password no puede estar vacío");
+      return false;
     }
-
-    if(password.length < 8){
-        alert("el password debe tener al menos 8 caracteres");
-        return false;
+  
+    if (password.length < 8) {
+      alert("El password debe tener al menos 8 caracteres");
+      return false;
     }
-
+  
+    // Si todas las condiciones se cumplen, mostrar un mensaje de éxito
+    alert("¡Inicio de sesión exitoso!");
     return true;
-}
+  }
+  
