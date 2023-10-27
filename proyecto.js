@@ -1,20 +1,28 @@
 // Función para abrir el modal
 function openModal() {
-  document.getElementById('myModal').style.display = 'block';
+  var modal = document.getElementById('myModal');
+  modal.style.display = 'block';
 
   // Cierra el modal automáticamente después de 5 segundos
   setTimeout(function() {
-      closeModal();
-  }, 10000); //  10 segundos)
+      closeModal(modal);
+  }, 5000); // 5000 milisegundos (5 segundos)
 }
 
 // Función para cerrar el modal
-function closeModal() {
-  document.getElementById('myModal').style.display = 'none';
+function closeModal(modal) {
+  modal.style.display = 'none';
 }
 
 // Llama a la función para abrir el modal cuando se carga la página
 window.onload = openModal;
+
+// Agrega un event listener a la x para cerrar el modal
+document.getElementById('closeModal').addEventListener('click', function() {
+  var modal = document.getElementById('myModal');
+  closeModal(modal);
+});
+
 
 
 //Validacion de Formulario
